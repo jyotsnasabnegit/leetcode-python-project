@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "type": "debugpy",
+      "request": "launch",
+      "name": "Launch a Python file",
+      "program": "${workspaceFolder}/${input:pythonFile}"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "pythonFile",
+      "type": "pickString",
+      "description": "Select the Python file to debug",
+      "options": [
+        "src/1_two_sum.py",
+        "src/128_longest_consecutive_sequence.py",
+        "src/2_add_two_numbers.py",
+        "src/test.py",
+        "tests/test_1_two_sum.py",
+        "tests/test_128_longest_consecutive_sequence.py",
+        "tests/test_2_add_two_numbers.py"
+      ]
+    }
+  ]
+}
